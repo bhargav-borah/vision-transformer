@@ -1,4 +1,3 @@
-````markdown
 # Vision Transformer for Image Classification
 
 This repository implements a Vision Transformer (ViT) for image classification on multiple datasets, including Flowers102, CIFAR-10, CIFAR-100, MNIST, and Fashion-MNIST. The implementation is based on the paper _"An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale"_ by Dosovitskiy et al. (2020).
@@ -42,7 +41,7 @@ This project provides a PyTorch implementation of a Vision Transformer (ViT-B/16
    ```bash
    git clone https://github.com/bhargav-borah/vision-transformer.git
    cd vision-transformer
-````
+   ```
 
 2. **Create a Virtual Environment**:
 
