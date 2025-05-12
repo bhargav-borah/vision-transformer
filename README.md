@@ -1,3 +1,4 @@
+````markdown
 # Vision Transformer for Image Classification
 
 This repository implements a Vision Transformer (ViT) for image classification on multiple datasets, including Flowers102, CIFAR-10, CIFAR-100, MNIST, and Fashion-MNIST. The implementation is based on the paper _"An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale"_ by Dosovitskiy et al. (2020).
@@ -17,13 +18,13 @@ This project provides a PyTorch implementation of a Vision Transformer (ViT-B/16
 
 ## Datasets
 
-| Dataset        | Classes | Image Type | Train | Val | Test  |
-|----------------|---------|------------|--------|-----|--------|
-| Flowers102     | 102     | Color      | ~1,020 | ~1,020 | ~6,149 |
-| CIFAR-10       | 10      | Color      | 50,000 | 5,000 | 5,000 |
-| CIFAR-100      | 100     | Color      | 50,000 | 5,000 | 5,000 |
-| MNIST          | 10      | Grayscale  | 60,000 | 5,000 | 5,000 |
-| Fashion-MNIST  | 10      | Grayscale  | 60,000 | 5,000 | 5,000 |
+| Dataset        | Classes | Image Type | Train   | Val    | Test   |
+|----------------|---------|------------|---------|--------|--------|
+| Flowers102     | 102     | Color      | ~1,020  | ~1,020 | ~6,149 |
+| CIFAR-10       | 10      | Color      | 50,000  | 5,000  | 5,000  |
+| CIFAR-100      | 100     | Color      | 50,000  | 5,000  | 5,000  |
+| MNIST          | 10      | Grayscale  | 60,000  | 5,000  | 5,000  |
+| Fashion-MNIST  | 10      | Grayscale  | 60,000  | 5,000  | 5,000  |
 
 > Note: For datasets without predefined validation sets, 50% of the test set is used for validation.
 
@@ -99,12 +100,10 @@ python train_vit.py --dataset flowers102 --num_epochs 300 --lr 3e-4 --batch_size
 ## Outputs
 
 * **Model Checkpoint**:
-
-  * `data/best_vit_<dataset>.pth`
+  `data/best_vit_<dataset>.pth`
 
 * **Metrics**:
-
-  * `data/metrics_<dataset>.json`
+  `data/metrics_<dataset>.json`
 
 * **Visualizations**:
 
@@ -131,4 +130,5 @@ Expected output files in `data/`:
 This implementation is based on the Vision Transformer architecture introduced in:
 
 > Dosovitskiy, A., Beyer, L., Kolesnikov, A., Weissenborn, D., Zhai, X., Unterthiner, T., Dehghani, M., Minderer, M., Heigold, G., Gelly, S., Uszoreit, J., & Houlsby, N. (2020). *An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale*. arXiv preprint [arXiv:2010.11929](https://arxiv.org/abs/2010.11929).
+
 
